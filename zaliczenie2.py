@@ -5,3 +5,6 @@ kwota_kredytu = float(input("Podaj Kwotę kredytu: "))
 oprocentowanie = float(input("Podaj oprocentowanie: "))
 kwota_raty_kredytu = float(input("Podaj kwotę raty: "))
 
+formula_do_obliczen = float((1 + ((inflacja1+oprocentowanie)/1200)) * kwota_kredytu - kwota_raty_kredytu)
+formula_do_obliczen2 = float((1 + ((inflacja2+oprocentowanie)/1200)) * formula_do_obliczen - kwota_raty_kredytu)
+formula_do_obliczen3 = float((1 + ((inflacja3+oprocentowanie)/1200)) * formula_do_obliczen2 - kwota_raty_kredytu)
